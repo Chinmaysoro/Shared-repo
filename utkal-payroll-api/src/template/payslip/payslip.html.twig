@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div style="width: 80%; display: block; margin: auto">
+      <h2 style="text-align: center">{{companyName}}</h2>
+      <p style="text-align: center">{{address}}</p>
+      <table style="border-collapse: collapse; width: 100%">
+        <tr>
+          <th
+            colspan="4"
+            style="
+              background-color: #141414;
+              text-align: center;
+              color: #fff;
+              padding: 8px;
+            "
+          >
+            PAYSLIP FOR {{month}} {{year}}
+          </th>
+        </tr>
+        <tr>
+          <td
+            style="
+              border: 1px solid #424242;
+              text-align: left;
+              padding: 8px;
+              background: #cdcdcd;
+            "
+          >
+            <b>Name</b>
+          </td>
+          <td style="border: 1px solid #424242; text-align: left; padding: 8px">
+            {{name}}
+          </td>
+          <td
+            style="
+              border: 1px solid #424242;
+              text-align: left;
+              padding: 8px;
+              background: #cdcdcd;
+            "
+          >
+            <b>PAN</b>
+          </td>
+          <td style="border: 1px solid #424242; text-align: left; padding: 8px">
+            {{pan}}
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="
+              border: 1px solid #424242;
+              text-align: left;
+              padding: 8px;
+              background: #cdcdcd;
+            "
+          >
+            <b>Employee Code</b>
+          </td>
+          <td style="border: 1px solid #424242; text-align: left; padding: 8px">
+            {{empId}}
+          </td>
+          <td
+            style="
+              border: 1px solid #424242;
+              text-align: left;
+              padding: 8px;
+              background: #cdcdcd;
+            "
+          >
+            <b>Sex</b>
+          </td>
+          <td style="border: 1px solid #424242; text-align: left; padding: 8px">
+            {{gender}}
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="
+              border: 1px solid #424242;
+              text-align: left;
+              padding: 8px;
+              background: #cdcdcd;
+            "
+          >
+            <b>Designation</b>
+          </td>
+          <td style="border: 1px solid #424242; text-align: left; padding: 8px">
+            {{designation}}
+          </td>
+          <td
+            style="
+              border: 1px solid #424242;
+              text-align: left;
+              padding: 8px;
+              background: #cdcdcd;
+            "
+          >
+            <b>Account Number</b>
+          </td>
+          <td style="border: 1px solid #424242; text-align: left; padding: 8px">
+            {{acnt}}
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="
+              border: 1px solid #424242;
+              text-align: left;
+              padding: 8px;
+              background: #cdcdcd;
+            "
+          >
+            <b>Location</b>
+          </td>
+          <td style="border: 1px solid #424242; text-align: left; padding: 8px">
+            {{location}}
+          </td>
+          <td
+            style="
+              border: 1px solid #424242;
+              text-align: left;
+              padding: 8px;
+              background: #cdcdcd;
+            "
+          >
+            <b>PF Account Number</b>
+          </td>
+          <td style="border: 1px solid #424242; text-align: left; padding: 8px">
+            {{pfAcnt}}
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="
+              border: 1px solid #424242;
+              text-align: left;
+              padding: 8px;
+              background: #cdcdcd;
+            "
+          >
+            <b>Joining Date</b>
+          </td>
+          <td style="border: 1px solid #424242; text-align: left; padding: 8px">
+            {{joinDate}}
+          </td>
+          <td
+            style="
+              border: 1px solid #424242;
+              text-align: left;
+              padding: 8px;
+              background: #cdcdcd;
+            "
+          >
+            <b>PF UAN</b>
+          </td>
+          <td style="border: 1px solid #424242; text-align: left; padding: 8px">
+            {{uan}}
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="
+              border: 1px solid #424242;
+              text-align: left;
+              padding: 8px;
+              background: #cdcdcd;
+            "
+          >
+            <b>Department</b>
+          </td>
+          <td
+            style="border: 1px solid #424242; text-align: left; padding: 8px"
+          > {{department}}</td>
+          <td
+            style="
+              border: 1px solid #424242;
+              text-align: left;
+              padding: 8px;
+              background: #cdcdcd;
+            "
+          >
+            <b>ESI Number</b>
+          </td>
+          <td style="border: 1px solid #424242; text-align: left; padding: 8px">
+            {{esic}}
+          </td>
+        </tr>
+      </table>
+
+      <table style="border-collapse: collapse; width: 50%; margin-top: 40px">
+        <tr>
+          <th
+            colspan="2"
+            style="
+              background-color: #141414;
+              text-align: center;
+              color: #fff;
+              padding: 8px;
+            "
+          >
+            PAY DAYS:
+          </th>
+        </tr>
+        <tr>
+          <td
+            colspan="2"
+            style="border: 1px solid #424242; text-align: center; padding: 8px"
+          >
+           {{paybleDays}}
+          </td>
+        </tr>
+      </table>
+
+      <div style="display: flex; width: 100%; margin-top: 40px">
+        <div style="width: 50%; display: inline-block; margin-right: 4px">
+          <table style="border-collapse: collapse; width: 100%">
+            <tr>
+              <th
+                colspan="2"
+                style="
+                  background-color: #141414;
+                  text-align: center;
+                  color: #fff;
+                  padding: 8px;
+                "
+              >
+                EARNINGS (INR)
+              </th>
+            </tr>
+            <tr>
+              <td
+                style="
+                  border: 1px solid #424242;
+                  text-align: left;
+                  padding: 8px;
+                  background: #cdcdcd;
+                "
+              >
+                <b>COMPONENTS</b>
+              </td>
+              <td
+                style="
+                  border: 1px solid #424242;
+                  text-align: left;
+                  padding: 8px;
+                  background: #cdcdcd;
+                "
+              >
+                <b>TOTAL</b>
+              </td>
+            </tr>
+
+            {% set totalEarnings = 0 %}
+            {% for item in additionComp %}
+                <tr>
+                <td
+                    style="
+                    border: 1px solid #424242;
+                    text-align: left;
+                    padding: 8px;
+                    background: #cdcdcd;
+                    "
+                >
+                    <b>{{item.name}}</b>
+                </td>
+                <td
+                    style="
+                    border: 1px solid #424242;
+                    text-align: left;
+                    padding: 8px;
+                    "
+                >
+                    {{item.actualValue}}
+                </td>
+                </tr>
+                {% set totalEarnings = totalEarnings + item.actualValue %}
+            {% endfor %}
+
+            <tr>
+              <td
+                style="
+                  border: 1px solid #424242;
+                  text-align: left;
+                  padding: 8px;
+                  background: #cdcdcd;
+                "
+              >
+                <b>TOTAL EARNINGS</b>
+              </td>
+              <td
+                style="
+                  border: 1px solid #424242;
+                  text-align: left;
+                  padding: 8px;
+                "
+              >
+                {{totalEarnings}}
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div style="width: 50%; display: inline-block; margin-left: 4px">
+          <table style="border-collapse: collapse; width: 100%">
+            <tr>
+              <th
+                colspan="2"
+                style="
+                  background-color: #141414;
+                  text-align: center;
+                  color: #fff;
+                  padding: 8px;
+                "
+              >
+                DEDUCTIONS (INR)
+              </th>
+            </tr>
+            <tr>
+              <td
+                style="
+                  border: 1px solid #424242;
+                  text-align: left;
+                  padding: 8px;
+                  background: #cdcdcd;
+                "
+              >
+                <b>COMPONENTS</b>
+              </td>
+              <td
+                style="
+                  border: 1px solid #424242;
+                  text-align: left;
+                  padding: 8px;
+                  background: #cdcdcd;
+                "
+              >
+                <b>TOTAL</b>
+              </td>
+            </tr>
+           
+            {% set totaDeductions = 0 %}
+            {% for item in deductionComp %}
+                <tr>
+                <td
+                    style="
+                    border: 1px solid #424242;
+                    text-align: left;
+                    padding: 8px;
+                    background: #cdcdcd;
+                    "
+                >
+                    <b>{{item.name}}</b>
+                </td>
+                <td
+                    style="
+                    border: 1px solid #424242;
+                    text-align: left;
+                    padding: 8px;
+                    "
+                >
+                    {{item.actualValue}}
+                </td>
+                </tr>
+                {% set totaDeductions = totaDeductions + item.actualValue %}
+            {% endfor %}
+
+            <tr>
+              <td
+                style="
+                  border: 1px solid #424242;
+                  text-align: left;
+                  padding: 8px;
+                  background: #cdcdcd;
+                "
+              >
+                <b>TOTAL DEDUCTIONS</b>
+              </td>
+              <td
+                style="
+                  border: 1px solid #424242;
+                  text-align: left;
+                  padding: 8px;
+                "
+              >
+                {{totaDeductions}}
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div style="margin-top: 40px; margin-bottom: 40px">
+        <table style="border-collapse: collapse; width: 100%">
+          <tr>
+            <td
+              style="
+                border: 1px solid #424242;
+                text-align: left;
+                padding: 8px;
+                background: #cdcdcd;
+                width: 30%;
+              "
+            >
+              <b>NET PAY (INR)</b>
+            </td>
+            <td
+              style="
+                border: 1px solid #424242;
+                text-align: left;
+                padding: 8px;
+                width: 70%;
+              "
+            >
+              <b>{{totalPay}}</b>
+            </td>
+          </tr>
+          <tr>
+            <td
+              style="
+                border: 1px solid #424242;
+                text-align: left;
+                padding: 8px;
+                background: #cdcdcd;
+                width: 30%;
+              "
+            >
+              <b>NET PAY IN WORDS</b>
+            </td>
+            <td
+              style="
+                border: 1px solid #424242;
+                text-align: left;
+                padding: 8px;
+                width: 70%;
+              "
+            >
+              {{totalPayWord}} Only
+            </td>
+          </tr>
+        </table>
+      </div>
+      <p style="margin-bottom: 40px; margin-top: 40px">
+        <b>Note: </b>This is a system generated payslip, does not require any
+        signature.
+      </p>
+    </div>
+  </body>
+</html>

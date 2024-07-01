@@ -1,0 +1,62 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "public": "../public/",
+  "paginate": {
+    "default": 150,
+    "max": 200
+  },
+  "aws": {
+    "accessKeyId": "AKIA37435MFJID2JJM3A",
+    "secretAccessKey": "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",
+    "bucket": "creuto-payroll"
+  },
+  "authentication": {
+    "entity": "user",
+    "service": "v1/users",
+    "secret": "kASw/2BhK/SQuX4cKC5NK0aXtPQ=",
+    "authStrategies": [
+      "jwt",
+      "local",
+      "local-phone",
+      "local-email",
+      "local-code"
+    ],
+    "jwtOptions": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://yourdomain.com",
+      "issuer": "feathers",
+      "algorithm": "HS256",
+      "expiresIn": "365d"
+    },
+    "local": {
+      "usernameField": "email",
+      "passwordField": "password"
+    },
+    "local-phone": {
+      "usernameField": "phone",
+      "passwordField": "code"
+    },
+    "local-email": {
+      "usernameField": "email",
+      "passwordField": "code"
+    },
+    "local-code": {
+      "usernameField": "empId",
+      "passwordField": "password"
+    }
+  },
+  "superUser": {
+    "firstName": "Indoplus",
+    "lastName": "Private Limited",
+    "phone": "9090090900",
+    "email": "info@indoplus.com",
+    "password": "9040@@@###",
+    "role": 65535,
+    "gender": "Male"
+  },
+  "baseurl":"https://utkalpayroll.com",
+  "mongodb": "mongodb+srv://chinmaysoro:8GSShjcoLZLug4bj@mytrail.qyansvb.mongodb.net/utkal-payroll"
+}
